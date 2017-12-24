@@ -1,0 +1,6 @@
+---
+Name: dataobjectauditorconfig
+---
+SilverStripe\ORM\DataObject:
+  extensions:
+    - SilverStripe\DataObjectAuditor\Extensions\AuditExtension

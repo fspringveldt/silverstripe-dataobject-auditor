@@ -1,0 +1,7 @@
+SilverStripe\DataObjectAuditor\Tests\Stubs\MockObject:
+  test1:
+    Field1: Field1Value1
+    Field2: Field2Value1
+  test2:
+    Field1: Field1Value2
+    Field2: Field2Value2
