@@ -13,6 +13,7 @@ use SilverStripe\DataObjectAuditor\Tests\Stubs\MockObject;
 class AuditExtensionTest extends SapphireTest
 {
     protected static $fixture_file = '../fixtures.yml';
+
     protected static $extra_dataobjects = [
         MockObject::class
     ];
