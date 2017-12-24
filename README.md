@@ -2,13 +2,12 @@
 [![Build Status](https://travis-ci.org/fspringveldt/silverstripe-dataobject-auditor.svg?branch=master)](https://travis-ci.org/fspringveldt/silverstripe-dataobject-auditor)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-dataobject-auditor/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-dataobject-auditor/?branch=master)
 [![Code coverage](https://codecov.io/gh/fspringveldt/silverstripe-dataobject-auditor/branch/master/graph/badge.svg)](https://codecov.io/gh/fspringveldt/silverstripe-dataobject-auditor)
-[![License](https://poser.pugx.org/fspringveldt/silverstripe-dataobject-auditor)](https://packagist.org/packages/fspringveldt/silverstripe-dataobject-auditor)
-
+[![License](https://poser.pugx.org/silverstripe/dataobject-auditor/license)](https://packagist.org/packages/silverstripe/dataobject-auditor)
 A SilverStripe module which audits updates to and deletions from DataObject subclasses.
 
 ## Installation
 
-```composer require silverstripe/dataobject-auditor```
+```composer require silverstripe/dataobject-auditor```https://travis-ci.org/fspringveldt/silverstripe-dataobject-auditor.svg?branch=master
 
 ## Setup
 No setup is required as the `AuditExtension` is automatically added to DataObject.
