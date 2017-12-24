@@ -8,7 +8,7 @@ A SilverStripe module which audits updates to and deletions from DataObject subc
 
 ## Installation
 
-```composer require silverstripe/dataobject-auditor```https://travis-ci.org/fspringveldt/silverstripe-dataobject-auditor.svg?branch=master
+```composer require silverstripe/dataobject-auditor```
 
 ## Setup
 No setup is required as the `AuditExtension` is automatically added to DataObject.
