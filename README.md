@@ -3,6 +3,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-dataobject-auditor/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-dataobject-auditor/?branch=master)
 [![Code coverage](https://codecov.io/gh/fspringveldt/silverstripe-dataobject-auditor/branch/master/graph/badge.svg)](https://codecov.io/gh/fspringveldt/silverstripe-dataobject-auditor)
 [![License](https://poser.pugx.org/silverstripe/dataobject-auditor/license)](https://packagist.org/packages/silverstripe/dataobject-auditor)
+
 A SilverStripe module which audits updates to and deletions from DataObject subclasses.
 
 ## Installation
