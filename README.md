@@ -15,8 +15,8 @@ A SilverStripe module which audits updates to and deletions from DataObject subc
 No setup is required as the `AuditExtension` is automatically added to DataObject.
 
 Changes are added to two tables viz. `DataObjectAuditor_Audit` which has a `$has_many` to `DataObjectAuditor_AuditValues`.
-To prevent duplication only changed records are added to the `DataObjectAuditor_AuditValues` table to as to prevent duplication.
-In the case of deletion though, the entire records is written.
+Only changed records are added to the `DataObjectAuditor_AuditValues` table to prevent duplication.
+In the case of deletion though, the entire record is written.
 
 ## Configuration/Usage instructions
 By default all DataObjects, except `Audit` and `AuditValue` are audited. 
