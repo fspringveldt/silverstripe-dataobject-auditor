@@ -14,6 +14,8 @@ class AuditValue extends DataObject
     const HAS_ONE_AUDIT_ID = 'AuditID';
     const HAS_ONE_AUDIT = 'Audit';
 
+    private static $table_name = 'DataObjectAuditor_AuditValue';
+
     private static $db = [
         self::DB_FIELD => 'Varchar(50)',
         self::DB_PREVIOUS_VALUE => 'Text',
@@ -23,12 +25,16 @@ class AuditValue extends DataObject
         self::HAS_ONE_AUDIT => Audit::class
     ];
 
-    private static $table_name = 'DataObjectAuditor_AuditValue';
-
     private static $indexes = [
         'inxAuditAndField' => [
             'type' => 'index',
             'columns' => [self::DB_FIELD, self::HAS_ONE_AUDIT_ID]
         ]
+    ];
+
+    private static $summary_fields = [
+        'ID',
+        self::DB_FIELD,
+        self::DB_PREVIOUS_VALUE
     ];
 }

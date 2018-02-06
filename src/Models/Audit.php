@@ -19,6 +19,8 @@ class Audit extends DataObject
     const HAS_ONE_DONE_BY = 'DoneBy';
     const DB_DONE_BY_ID = 'DoneByID';
 
+    private static $table_name = 'DataObjectAuditor_Audit';
+
     private static $db = [
         self::DB_MODEL_NAME => 'Varchar(150)',
         self::DB_MODEL_ID => 'Int',
@@ -41,7 +43,13 @@ class Audit extends DataObject
         self::HAS_MANY_AUDIT_VALUES => AuditValue::class
     ];
 
-    private static $table_name = 'DataObjectAuditor_Audit';
+    private static $summary_fields = [
+        'ID',
+        self::DB_MODEL_NAME,
+        self::DB_MUTATION_PEFORMED,
+        self::DB_DONE_BY_ID,
+        'Created'
+    ];
 
     public function onBeforeWrite()
     {
