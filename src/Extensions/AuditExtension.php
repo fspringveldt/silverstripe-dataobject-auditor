@@ -33,8 +33,8 @@ class AuditExtension extends DataExtension
     {
         parent::onAfterWrite();
         $baseChangedFields = $this->owner->getChangedFields(true, DataObject::CHANGE_VALUE);
-         // A good guestimate is that if baseChangedFields contains an ID column, it's safe to assume
-         // that it is an INSERT operation and thus shouldn't be audited.
+        // A good guestimate is that if baseChangedFields contains an ID column, it's safe to assume
+        // that it is an INSERT operation and thus shouldn't be audited.
         if (in_array('ID', array_keys($baseChangedFields))) {
             return;
         }
@@ -68,6 +68,9 @@ class AuditExtension extends DataExtension
         ])->write();
 
         foreach ($record as $key => $value) {
+            if (!$value || is_object($value)) {
+                continue;
+            }
             AuditValue::create()
                 ->setField(AuditValue::DB_FIELD, $key)
                 ->setField(AuditValue::DB_PREVIOUS_VALUE, $value)
